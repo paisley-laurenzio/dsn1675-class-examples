@@ -5,10 +5,8 @@
 @viewport { width: device-width; scale: 1; }
 
 html {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
-
+    
   font: normal 100%/1.5 sans-serif;
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -20,12 +18,20 @@ html {
   box-sizing: inherit;
 }
 
-body {
-  margin: 0;
-  padding: 0;
+.title {
+    color: red;
 }
 
-img {
-  display: block;
-  width: 100%;
+@media only screen and (min-width: 400px) {
+
+.title {
+  color: green;
+  font-size: 10rem; 
+}
+}
+
+@media only screen and (min-width: 700px) {
+
+.title {
+   color: blue;}
 }
